@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Red Drop</title>
+</head>
+<body>
+    <img src="header pic.jpg" width="100%">
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="doctors form.html">Patient Entry</a>
+        <a href="donors.html">Nearby Donors</a>
+        <a href="footer.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="list.html">Nearby Blood Banks</a>
+      </div>
+      <h2>    Patient Entry:</h2>
+    <div class="row">
+        <div class="col-25">
+          <label>Patient's Full Name : </label>
+        </div>
+        <div class="col-75">
+          <input type="text" placeholder="Enter The Patient's Name*">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label>Date Of Birth : </label>
+        </div>
+        <div class="col-75">
+          <input type="date" placeholder="*">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label>Weight : </label>
+        </div>
+        <div class="col-75">
+          <input type="text" placeholder="Enter The Patient's Weight*">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label>Height : </label>
+        </div>
+        <div class="col-75">
+          <input type="text" placeholder="Enter The Patient's Height*">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label>Gender : </label>
+        </div>
+        <div class="col-75">
+          <input type="radio">
+          <label>Male</label>
+          <input type="radio">
+          <label>Female</label>
+          <input type="radio">
+          <label>Other</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label>Email : </label>
+        </div>
+        <div class="col-75">
+          <input type="text" placeholder="Enter The Email ID:">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label>Phone No. : </label>
+        </div>
+        <div class="col-75">
+          <input type="text" placeholder="10 Digit Phone Number*">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label>Address : </label>
+        </div>
+        <div class="col-75">
+          <input type="text" placeholder="Enter Full Adress*">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label>Occupation : </label>
+        </div>
+        <div class="col-75">
+          <input type="text" placeholder="Enter Your Occupation*">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label>Treated By : </label>
+        </div>
+        <div class="col-75">
+          <input type="text" placeholder="Staff's Name*">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="country">Select Blood Group : </label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="None">--Select Blood Group--</option>
+            <option value="A +VE">A +VE</option>
+            <option value="A -VE">A -VE</option>
+            <option value="usa">B +VE</option>
+            <option value="usa">B -VE</option>
+            <option value="usa">AB +VE</option>
+            <option value="usa">AB -VE</option>
+            <option value="usa">A1 +VE</option>
+            <option value="usa">A1 -VE</option>
+            <option value="usa">A2 +VE</option>
+            <option value="usa">A2 -VE</option>
+            <option value="usa">A1B +VE</option>
+            <option value="usa">A1B -VE</option>
+            <option value="usa">A2B +VE</option>
+            <option value="usa">A2B -VE</option>
+            <option value="usa">O +VE</option>
+            <option value="usa">O -VE</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label>Remarks : </label>
+        </div>
+        <div class="col-75">
+          <input type="text" placeholder="If Any">
+        </div>
+    </div>
+      <br>
+      <div>
+        <input class="buttonofsubmit" onclick="alertdisplay()" type="submit" value="Submit">
+      </div>
+      <script>
+        function alertdisplay()
+        {
+            window.alert("Patient Record Submitted Successfully");
+            window.location.reload();
+        }
+      </script>
+    </form>
+  </div>
+</div>
+</div>
+<img width="100%" src="footer1.jpg" style="margin-top: 20px;">
+</body>
+</html>

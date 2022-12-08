@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Red Drop</title>
+</head>
+<body>
+    <img src="header pic.jpg" width="100%">
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="doctors form.html">Patient Entry</a>
+        <a href="donors.html">Nearby Donors</a>
+        <a href="footer.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="list.html">Nearby Blood Banks</a>
+      </div>
+    <div class="split left">
+      <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img (1).jpg" style="width:100%">
+            <div class="text">Be the reason for someone's heartbeat.</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img (2).jpg" style="width:100%">
+            <div class="text">A single drop of blood can make a huge difference.</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img (3).jpg" style="width:100%">
+            <div class="text">The gift of blood is a gift to someone's life.</div>
+          </div>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          
+          <script>
+          let slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000);
+          }
+          </script>
+    </div>
+
+    <div class="split right">
+          <div class="container">
+              <h2>New User? Sign Up Here!</h2>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Full Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="fname" placeholder="Your Full Name*">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="country">Select Blood Group</label>
+                </div>
+                <div class="col-75">
+                  <select id="country" name="country">
+                    <option value="None">--Select Blood Group--</option>
+                    <option value="A +VE">A +VE</option>
+                    <option value="A -VE">A -VE</option>
+                    <option value="usa">B +VE</option>
+                    <option value="usa">B -VE</option>
+                    <option value="usa">AB +VE</option>
+                    <option value="usa">AB -VE</option>
+                    <option value="usa">A1 +VE</option>
+                    <option value="usa">A1 -VE</option>
+                    <option value="usa">A2 +VE</option>
+                    <option value="usa">A2 -VE</option>
+                    <option value="usa">A1B +VE</option>
+                    <option value="usa">A1B -VE</option>
+                    <option value="usa">A2B +VE</option>
+                    <option value="usa">A2B -VE</option>
+                    <option value="usa">O +VE</option>
+                    <option value="usa">O -VE</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Postal Pincode</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="Pincode" placeholder="Your PIN CODE*">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Mobile Number</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="phone" placeholder="10 Digit Phone Number*">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Email Address</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="email" placeholder="Enter Your Email ID">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Password</label>
+                </div>
+                <div class="col-75">
+                  <input type="password" id="lname" name="Password" placeholder="Create New Password*">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Confirm Password</label>
+                </div>
+                <div class="col-75">
+                  <input type="password" id="lname" name="Password" placeholder="Confirm New Password*">
+                </div>
+              </div>
+              <div class="row">
+                <input onclick="alertdisplay()" type="submit" value="Submit">
+              </div>
+              <script>
+                function alertdisplay()
+                {
+                    window.alert("User Registered successfully");
+                    window.location.reload();
+                }
+              </script>
+            </form>
+          </div>
+      </div>
+    </div>
+    <img class="footerimage" width="100%" src="footer1.jpg">
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="donors.css">
+    <title>Potential Donors</title>
+    <script>
+        function myFunction() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("input");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+        
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+        }
+        </script>
+</head>
+<body>
+  <img src="header pic.jpg" width="100%">
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="doctors form.html">Patient Entry</a>
+        <a class="active" href="donors.html">Nearby Donors</a>
+        <a href="footer.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="list.html">Nearby Blood Banks</a>
+      </div>
+    <div id="div1">
+    <h1 style="color:red;margin-left:35%;">DONOR'S LIST</h1>
+    </div>
+    <p>Below here, users can search for potential donors in their locality. We are here for you 24/7.
+        Take care. <br>
+        <span style="color:red;"> <b> DONATE BLOOD AND SAVE LIVES </b></span>
+    </p>
+    <input type="text" id="input" onkeyup="myFunction()" placeholder="Search for location . . .">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:26%;">Address</th>
+    <th style="width:22%;">Blood Group</th>
+    <th style="width:25%;">Name of Donor</th>
+    <th style="width:22%;">Contact</th>
+  </tr>
+  
+  <tr>
+    <td>Phagwara</td>
+    <td>AB -ve</td>
+    <td>Viaklp Singh</td>
+    <td>7800766333</td>
+  </tr>
+  <tr>
+    <td>Phagwara</td>
+    <td>O -ve</td>
+    <td>Farhan Banday</td>
+    <td>7006574387</td>
+  </tr>
+  <tr>
+    <td>Ludhiana</td>
+    <td>B +ve</td>
+    <td>Shashikant Kumar</td>
+    <td>7844234450</td>
+  </tr>
+  <tr>
+    <td>Amritsar</td>
+    <td>Ab +ve</td>
+    <td>Punit Singhania</td>
+    <td>9364728111</td>
+  </tr>
+  <tr>
+    <td>Jalandar</td>
+    <td>O +ve</td>
+    <td>Aditi Kumari</td>
+    <td>9752637890</td>
+  </tr>
+  <tr>
+    <td>Chandigarh</td>
+    <td>O +ve</td>
+    <td>Ajay Thakur</td>
+    <td>9541566272</td>
+  </tr>
+  <tr>
+    <td>Jalandar</td>
+    <td>O +ve</td>
+    <td>Anand Kumar</td>
+    <td>95436700001</td>
+  </tr>
+  <tr>
+    <td>Jalandar</td>
+    <td>O +ve</td>
+    <td>Kabir Singh</td>
+    <td>954227611</td>
+  </tr>
+<tr>
+    <td>Meerut</td>
+    <td>A +ve</td>
+    <td>Dishika Mudgal</td>
+    <td>9541829901</td>
+  </tr>
+  <tr>
+    <td>Amritsar</td>
+    <td>O +ve</td>
+    <td>Radhe Kumar</td>
+    <td>966533782</td>
+  </tr>
+  <tr>
+    <td>Chandigarh</td>
+    <td>O +ve</td>
+    <td>John Wick</td>
+    <td>5669829901</td>
+  </tr>
+  <tr>
+    <td>Jalandar</td>
+    <td>B -ve</td>
+    <td>Salman Khan</td>
+    <td>9533778820</td>
+  </tr>
+  <tr>
+    <td>Ludhiana</td>
+    <td>O +ve</td>
+    <td>Akshay Kumar</td>
+    <td>9541899901</td>
+  </tr>
+  <tr>
+    <td>Amritsar</td>
+    <td>O -ve</td>
+    <td>Anil Kapoor</td>
+    <td>7899829403</td>
+  </tr>
+  <tr>
+    <td>Chandigarh</td>
+    <td>O +ve</td>
+    <td>Sunil Shetty</td>
+    <td>952283911</td>
+  </tr>
+  <tr>
+    <td>Jalandar</td>
+    <td>O -ve</td>
+    <td>Raftaar</td>
+    <td>954001829</td>
+  </tr>
+  <tr>
+    <td>Jalandar</td>
+    <td>O +ve</td>
+    <td>Chatur Ramalingam</td>
+    <td>9980229901</td>
+  </tr>
+  <tr>
+    <td>Amritsar</td>
+    <td>B +ve</td>
+    <td>Gabbar Singh</td>
+    <td>9532887112</td>
+  </tr>
+  <tr>
+    <td>Ludhiana</td>
+    <td>O +ve</td>
+    <td>Ranchoddas C. Chanchad</td>
+    <td>9541829901</td>
+  </tr>
+  <tr>
+    <td>Ludhiana</td>
+    <td>B +ve</td>
+    <td>Babu Rao</td>
+    <td>799820901</td>
+  </tr>
+  <tr>
+    <td>Jalandar</td>
+    <td>O +ve</td>
+    <td>Sajid Malik</td>
+    <td>7600123343</td>
+  </tr>
+  <tr>
+    <td>Amritsar</td>
+    <td>B -ve</td>
+    <td>Chote Pandit</td>
+    <td>9541786441</td>
+  </tr>
+  <tr>
+    <td>Chandigarh</td>
+    <td>B -ve</td>
+    <td>Syed Salman</td>
+    <td>7889662455</td>
+  </tr>
+  <tr>
+    <td>Jalandar</td>
+    <td>O +ve</td>
+    <td>Zaid Bashir</td>
+    <td>8899677623</td>
+  </tr>
+  <tr>
+    <td>Chandigarh</td>
+    <td>O +ve</td>
+    <td>Joe Root</td>
+    <td>9906167889</td>
+  </tr>
+  <tr>
+    <td>Phagwara</td>
+    <td>O +ve</td>
+    <td>Naveed Sheikh</td>
+    <td>7890556260</td>
+  </tr>
+  <tr>
+    <td>Jalandar</td>
+    <td>AB -ve</td>
+    <td>Ziya Yousuf</td>
+    <td>7006367880</td>
+  </tr>
+  <tr>
+    <td>Jalandar</td>
+    <td>O -ve</td>
+    <td>Aisha Sheikh</td>
+    <td>8907524378</td>
+  </tr>
+  <tr>
+    <td>Phagwara</td>
+    <td>O +ve</td>
+    <td>Riya tiwari</td>
+    <td>7078643312</td>
+  </tr>
+  <tr>
+    <td>Jalandar</td>
+    <td>O +ve</td>
+    <td>Anjali Kour</td>
+    <td>8800754779</td>
+  </tr>
+  <tr>
+    <td>Chandigarh</td>
+    <td>AB +ve</td>
+    <td>Khushi</td>
+    <td>7071244851</td>
+  </tr>
+  <tr>
+    <td>Phagwara</td>
+    <td>O +ve</td>
+    <td>Gautum Gulathi</td>
+    <td>9899221918</td>
+  </tr>
+  <tr>
+    <td>Jalandar</td>
+    <td>O +ve</td>
+    <td>Hritik Roy</td>
+    <td>7072885656</td>
+  </tr>
+  <tr>
+    <td>Chandigarh</td>
+    <td>O -ve</td>
+    <td>Sumitra Dixit</td>
+    <td>7071808606</td>
+  </tr>
+  <tr>
+    <td>Jalandar</td>
+    <td>A -ve</td>
+    <td>Amit Thakur</td>
+    <td>6009227889</td>
+  </tr>
+  <tr>
+    <td>Jalandar</td>
+    <td>O +ve</td>
+    <td>Virat Kohli</td>
+    <td>9889673421</td>
+  </tr>
+  <tr>
+    <td>Chandigarh</td>
+    <td>A +ve</td>
+    <td>Gurleen Kaur</td>
+    <td>7909554389</td>
+  </tr>
+  
+  
+</table>
+</body>
+</html>

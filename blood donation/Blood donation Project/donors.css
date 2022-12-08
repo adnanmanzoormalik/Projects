@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 100;
+  max-width: fit-content;
+}
+
+.topnav {
+  background-color: rgb(36, 33, 33);
+  overflow: hidden;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: rgb(255, 0, 0);
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #ff0000;
+  color: white;
+}
+
+
+#input {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    font-size: 16px; 
+    padding: 12px 20px 12px 40px; 
+    border: 1px solid #ddd; 
+    margin-bottom: 12px; 
+  }
+  
+  #myTable {
+    border-collapse: collapse; 
+    width: 100%; 
+    border: 1px solid #ddd; 
+    font-size: 18px; 
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left; 
+    padding: 12px; 
+  }
+  
+  #myTable tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myTable tr.header {
+    background-color: #ee3838;
+  }
+
+  #myTable tr:hover
+  {
+    background-color: hsl(0, 73%, 97%);
+  }
+
+  #div1
+  {
+    background-color: black;
+  }

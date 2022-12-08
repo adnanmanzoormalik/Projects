@@ -1,0 +1,98 @@
+.topnav {
+    background-color: rgb(36, 33, 33);
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(255, 0, 0);
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+  }
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse:collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+}
+
+th {
+    padding: 15px;
+    background-color: rgba(163, 34, 34, 0.5);
+    color: #fff;
+}
+
+tr:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+td
+{
+    padding: 15px;
+    background-color: rgba(163, 34, 34, 0.5);
+    color: #fff;
+}
+
+.bgm1
+{
+    background: linear-gradient(45deg, #ff0000, #ffffff);
+}
+.bgm2
+{
+    background: linear-gradient(45deg, #ff5a00, #000000);
+}
+.bgm3
+{
+    background: linear-gradient(45deg, #ff9a00, #ffffff);
+}
+.bgm4
+{
+    background: linear-gradient(45deg, #ffce00, #000000);
+}
+.bgm5
+{
+    background: linear-gradient(45deg, #f0ff00, #ffffff);
+}
+.bgm6
+{
+    background: linear-gradient(45deg, #d9ff00, #000000);
+}
+
+
+
+.location
+{
+    color: inherit;
+    text-decoration: inherit;
+    border-style: inset;
+  }
